@@ -2,7 +2,9 @@
     import { goto } from "$app/navigation";
     import { fade } from "svelte/transition";
 
-    let { title, url } = $props();
+    let { title } = $props();
+
+    const url = title.replace(' ', '-');
 
     let hovering = $state(false);
     let active = $state(false);
