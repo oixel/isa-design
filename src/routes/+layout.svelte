@@ -13,7 +13,7 @@
 <!-- This is the NavBar -->
 <div 
 	bind:offsetHeight={navbarHeight} 
-	class="fixed w-[100vw] bg-white border-b-2 p-5 flex items-center
+	class="fixed w-[100vw] h-[7vh] bg-white border-b-2 p-5 flex items-center
 		justify-center gap-3 
 		sm:justify-start sm:gap-5"
 	>
@@ -45,15 +45,16 @@
 	{@render sectionButton("contact")}
 </div>
 
-<div class="flex flex-col">
+<div class="flex flex-col w-[100vw] h-auto">
 	<!-- Places an invisible div with the same dimensions as navbar to offset page content properly -->
-	<div class="bg-red-500" style="height: {navbarHeight}px;"></div>
-	
+	<div style="height: {navbarHeight}px;"></div>
+
+	<DottedBackground />
+
 	<!-- Render out page content! -->
 	{@render children()}
 </div>
 
-<DottedBackground />
 
 <style>
 	@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
