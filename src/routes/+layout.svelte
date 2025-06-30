@@ -8,6 +8,10 @@
 	let { children } = $props();
 </script>
 
+<svelte:head>
+	<title>Isabela Delgado's Portfolio</title>
+</svelte:head>
+
 <!-- This is the NavBar -->
 <div 
 	class="fixed z-10 w-[100vw] h-[7vh] bg-white border-b-2 p-5 flex items-center
