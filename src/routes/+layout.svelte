@@ -6,14 +6,11 @@
 	import { goto } from '$app/navigation';
 
 	let { children } = $props();
-
-	let navbarHeight = $state(0);
 </script>
 
 <!-- This is the NavBar -->
 <div 
-	bind:offsetHeight={navbarHeight} 
-	class="fixed w-[100vw] h-[7vh] bg-white border-b-2 p-5 flex items-center
+	class="fixed z-10 w-[100vw] h-[7vh] bg-white border-b-2 p-5 flex items-center
 		justify-center gap-3 
 		sm:justify-start sm:gap-5"
 	>
@@ -45,14 +42,25 @@
 	{@render sectionButton("contact")}
 </div>
 
-<div class="flex flex-col w-[100vw] h-auto">
-	<!-- Places an invisible div with the same dimensions as navbar to offset page content properly -->
-	<div style="height: {navbarHeight}px;"></div>
+<div class="flex flex-col w-[100vw] h-[100vh]">
+	<!-- Render out page content! -->
+	<div class="h-full mt-30">
+		{@render children()}
+	</div>
 
 	<DottedBackground />
 
-	<!-- Render out page content! -->
-	{@render children()}
+	<!-- A little self promotion never hurt anybody -->
+	<footer class="figtree mt-15 border-t-1 bg-white p-2 pr-4 text-right flex justify-end items-center">
+		made by&nbsp;
+		<a 
+			href='https://github.com/oixel'
+			class="underline sm:no-underline hover:scale-105 hover:cursor-pointer"
+		>
+			oixel
+	</a> 
+	&nbsp;♥
+	</footer>
 </div>
 
 
