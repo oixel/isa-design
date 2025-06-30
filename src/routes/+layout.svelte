@@ -11,16 +11,21 @@
 </script>
 
 <!-- This is the NavBar -->
-<div bind:offsetHeight={navbarHeight} class="fixed w-[100vw] border-b-2 p-5 flex gap-5 bg-white">
+<div 
+	bind:offsetHeight={navbarHeight} 
+	class="fixed w-[100vw] bg-white border-b-2 p-5 flex items-center
+		justify-center gap-3 
+		sm:justify-start sm:gap-5"
+	>
 	<!-- Name / portfolio button -->
 	<button 
 		onclick={() => goto("/")}
-		class="figtree text-2xl hover:cursor-pointer hover:scale-102 transition-transform duration-100">
+		class="figtree text-lg sm:text-2xl text-center text-nowrap hover:cursor-pointer hover:scale-102 transition-transform duration-100">
 		Isabela Delgado
 	</button>
 	
 	<!-- Add little divider icon to separate name from section buttons -->
-	<p class="figtree pt-1 select-none">
+	<p class="figtree select-none">
 		~
 	</p>
 
