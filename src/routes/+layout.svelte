@@ -1,7 +1,7 @@
 <script lang="ts">
 	import '../app.css';
 
-	import DottedBackground from './DottedBackground.svelte';
+	import DottedBackground from '$lib/assets/DottedBackground.svelte';
 
 	import { goto } from '$app/navigation';
 

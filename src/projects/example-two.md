@@ -4,6 +4,12 @@ description: Project example two.
 date: '2025-07-01'
 ---
 
-# Project: Example Two
+[This is where another project would go]
 
-This was a project I did at another point in time.
+<style>
+    /* 
+        NOTE: styling has to be done manually because tailwind overwrites everything...
+    
+        Alternatively, create a tailwind prose file and import it into markdown files
+    */
+</style>

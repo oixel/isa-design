@@ -1,9 +1,15 @@
 ---
-title: Big Building 
+title: Example One
 description: Project example one.
 date: '2025-07-01'
 ---
 
-# Project: Example One
+[This is where a project would go]
 
-This was a project I did at one point in time.
+<style>
+    /* 
+        NOTE: styling has to be done manually because tailwind overwrites everything...
+    
+        Alternatively, create a tailwind prose file and import it into markdown files
+    */
+</style>

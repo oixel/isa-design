@@ -2,38 +2,23 @@
 	import { goto } from '$app/navigation';
 	import { fade } from 'svelte/transition';
 
-	let { title } = $props();
-
-	const url = title.replace(' ', '-');
+	let { title, slug } = $props();
 
 	let hovering = $state(false);
 	let active = $state(false);
-
-	function onmouseenter() {
-		hovering = true;
-	}
-
-	function onmouseleave() {
-		hovering = false;
-	}
-
-	function ontouchstart() {
-		active = true;
-	}
-
-	function ontouchend() {
-		active = false;
-	}
 </script>
 
 <!-- Note: The portfolio tile shrinks to a square aspect ratio on mobile devices and fills 9/10 otherwise -->
 <div
 	role="Portfolio tile for project named {title}"
-	onclick={() => goto(`/portfolio/${url}`)}
-	{onmouseenter}
-	{onmouseleave}
-	{ontouchstart}
-	{ontouchend}
+
+	onclick={() => goto(`/portfolio/${slug}`)}
+
+	onmouseenter={() => {hovering = true;}}
+	onmouseleave={() => {hovering = false;}}
+	ontouchstart={() => {active = true;}}
+	ontouchend={() => {active = false;}}
+
 	class="
         aspect-square
         w-9/10 border-2
