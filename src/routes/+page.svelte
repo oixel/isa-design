@@ -1,9 +1,8 @@
 <script lang="ts">
-    import PortfolioTile from "$lib/components/PortfolioTile.svelte";
+	import PortfolioTile from '$lib/components/PortfolioTile.svelte';
 </script>
 
-<div class="h-full flex flex-col items-center gap-10">
-    <PortfolioTile title={"Example One"} />
-    <PortfolioTile title={"Example Two"} />
+<div class="flex h-full flex-col items-center gap-10">
+	<PortfolioTile title={'Example One'} />
+	<PortfolioTile title={'Example Two'} />
 </div>
-
