@@ -21,7 +21,7 @@
 	<!-- Name / portfolio button -->
 	<button
 		onclick={() => goto('/')}
-		class="figtree text-center text-lg text-nowrap decoration-dashed transition-transform duration-100 hover:scale-102 hover:cursor-pointer hover:underline sm:text-2xl"
+		class="figtree text-center text-lg text-nowrap decoration-wavy transition-transform duration-100 hover:scale-102 hover:cursor-pointer hover:underline sm:text-2xl"
 	>
 		Isabela Delgado
 	</button>

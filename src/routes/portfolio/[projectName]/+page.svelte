@@ -5,3 +5,6 @@
 <div class="h-[93vh] w-full">
 	<h1>This is a page for the project titled {data.name}</h1>
 </div>
+
+<!-- {data.transformed_code} -->
+
