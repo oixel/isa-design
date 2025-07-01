@@ -1,5 +1,5 @@
 <script lang="ts">
-	import PortfolioTile from '$lib/components/PortfolioTile.svelte';
+	import PortfolioTile from './PortfolioTile.svelte';
 
 	let { data } = $props();
 </script>
