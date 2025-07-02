@@ -6,39 +6,47 @@
 
 	let hovering = $state(false);
 	let active = $state(false);
+	let focused = $state(false);
 </script>
 
 <!-- Note: The portfolio tile shrinks to a square aspect ratio on mobile devices and fills 9/10 otherwise -->
-<div
+<button
 	role="Portfolio tile for project named {title}"
-
 	onclick={() => goto(`/portfolio/${slug}`)}
-
-	onmouseenter={() => {hovering = true;}}
-	onmouseleave={() => {hovering = false;}}
-	ontouchstart={() => {active = true;}}
-	ontouchend={() => {active = false;}}
-
-	style={(thumbnail) ? `background-image: url(${thumbnail});` : ''}
-
+	onmouseenter={() => {
+		hovering = true;
+	}}
+	onmouseleave={() => {
+		hovering = false;
+	}}
+	ontouchstart={() => {
+		active = true;
+	}}
+	ontouchend={() => {
+		active = false;
+	}}
+	bind:focused
+	style={thumbnail ? `background-image: url(${thumbnail});` : ''}
 	class="
-		bg-cover
-		bg-center bg-no-repeat
-        aspect-square
-        w-9/10 border-2
-        bg-white select-none hover:cursor-pointer
+		aspect-square
+		w-9/10
+		border-2 bg-white
+        bg-cover
+        bg-center bg-no-repeat
+        outline-0 select-none hover:cursor-pointer
         hover:border-dashed
-        active:cursor-pointer active:border-dashed
+        focus:border-dashed
+		active:border-dashed
         sm:aspect-auto sm:h-150
     "
 >
-	{#if hovering || active}
+	{#if hovering || active || focused}
 		<div
 			transition:fade
 			style="background-color: rgba(255, 255, 255, 0.4);"
-			class="flex h-full w-full items-center justify-center "
+			class="flex h-full w-full items-center justify-center"
 		>
-			<h1 class="figtree text-4xl px-4 py-1 select-none bg-white border-2">{title}</h1>
+			<h1 class="figtree border-2 bg-white px-4 py-1 text-4xl select-none">{title}</h1>
 		</div>
 	{/if}
-</div>
+</button>

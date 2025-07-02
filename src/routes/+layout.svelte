@@ -25,10 +25,10 @@
 	<button
 		onclick={() => goto('/')}
 		class="
-			figtree text-center text-lg text-nowrap decoration-wavy
-			transition-transform duration-100 hover:scale-102
-			hover:cursor-pointer hover:underline active:scale-102
-			active:underline sm:text-2xl
+			figtree text-center text-lg text-nowrap decoration-wavy outline-0 transition-transform duration-100
+			select-none hover:scale-102
+			hover:cursor-pointer hover:underline focus:scale-102
+			focus:underline active:scale-102 active:underline sm:text-2xl
 		"
 	>
 		Isabela Delgado
@@ -41,7 +41,7 @@
 	{#snippet sectionButton(title: string)}
 		<button
 			onclick={() => goto(`/${title}`)}
-			class="figtree hover:cursor-pointer hover:border-b-2 active:border-b-2"
+			class="figtree outline-0 select-none hover:cursor-pointer hover:border-b-2 focus:border-b-2 active:border-b-2"
 		>
 			{title}
 		</button>
@@ -53,9 +53,9 @@
 	{@render sectionButton('contact')}
 </div>
 
-<div style="padding-top: {navbarHeight}px; "class="flex h-[100vh] flex-col">
+<div style="padding-top: {navbarHeight}px; " class="flex h-[100vh] flex-col">
 	<!-- Render out page content! -->
-	<div class="grow py-15 px-5">
+	<div class="grow px-5 py-15">
 		{@render children()}
 	</div>
 
