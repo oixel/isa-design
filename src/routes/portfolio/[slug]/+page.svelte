@@ -21,7 +21,7 @@
 	</div>
 	<hr class="my-2" />
 
-	<div class="stylized text-center">
+	<div class="text-center text-balance break-words">
 		<data.content />
 	</div>
 </div>
