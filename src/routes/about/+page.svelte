@@ -1,1 +1,1 @@
-<div class="w-1/2 h-1/2 border-2 bg-white resize"></div>
+<h1>About me!</h1>
