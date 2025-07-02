@@ -10,10 +10,6 @@
 	let navbarHeight = $state(0);
 </script>
 
-<svelte:head>
-	<title>Isabela Delgado's Portfolio</title>
-</svelte:head>
-
 <!-- This is the NavBar -->
 <div
 	bind:clientHeight={navbarHeight}

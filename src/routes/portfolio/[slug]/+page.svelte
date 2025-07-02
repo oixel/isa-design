@@ -4,6 +4,10 @@
 	let { data } = $props();
 </script>
 
+<svelte:head>
+	<title>Isabela Delgado: {data.metadata.title}</title>
+</svelte:head>
+
 <div class="figtree px-5">
 	<div class="flex h-fit gap-2">
 		<div class="grow">
@@ -21,7 +25,7 @@
 	</div>
 	<hr class="my-2" />
 
-	<div class="stylized">
+	<div class="stylized text-center">
 		<data.content />
 	</div>
 </div>
