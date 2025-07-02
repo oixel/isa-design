@@ -14,7 +14,7 @@
 			onclick={() => goto('/')}
 			class="m-3 ml-auto flex aspect-square items-center border-2 bg-white p-3 outline-0
             transition-all duration-100 hover:scale-105
-            hover:cursor-pointer hover:border-dashed focus:scale-105 focus:border-dashed active:scale-105 active:border-dashed"
+            cursor-pointer hover:border-dashed focus:scale-105 focus:border-dashed active:scale-105 active:border-dashed"
 		>
 			X
 		</button>

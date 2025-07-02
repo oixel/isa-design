@@ -33,7 +33,7 @@
 		border-2 bg-white
         bg-cover
         bg-center bg-no-repeat
-        outline-0 select-none hover:cursor-pointer
+        outline-0 select-none cursor-pointer
         hover:border-dashed
         focus:border-dashed
 		active:border-dashed

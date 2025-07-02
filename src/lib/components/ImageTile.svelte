@@ -20,7 +20,7 @@
 		}}
 		{src}
 		{alt}
-		class="lg:3/4 2xl:1/2 w-full border-2 outline-0 transition-all duration-200 hover:scale-101 hover:cursor-zoom-in hover:border-dashed focus:scale-101 focus:border-dashed active:scale-101 active:border-dashed xl:w-1/2"
+		class="lg:3/4 2xl:1/2 w-full cursor-zoom-in border-2 outline-0 transition-all duration-200 hover:scale-101 hover:border-dashed focus:scale-101 focus:border-dashed active:scale-101 active:border-dashed xl:w-1/2"
 	/>
 	<h2>{alt}</h2>
 </div>
@@ -36,7 +36,7 @@
 		onclick={() => {
 			imageOpen = false;
 		}}
-		class="fixed top-0 right-0 z-30 m-5 flex aspect-square items-center border-2 outline-0 bg-white p-3 transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-dashed active:scale-105 active:border-dashed focus:scale-105 focus:border-dashed"
+		class="fixed top-0 right-0 z-30 m-5 flex aspect-square items-center border-2 bg-white p-3 outline-0 transition-all duration-200 hover:scale-105 cursor-pointer hover:border-dashed focus:scale-105 focus:border-dashed active:scale-105 active:border-dashed"
 	>
 		X
 	</button>

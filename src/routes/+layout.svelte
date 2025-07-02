@@ -27,7 +27,7 @@
 		class="
 			figtree text-center text-lg text-nowrap decoration-wavy outline-0 transition-transform duration-100
 			select-none hover:scale-102
-			hover:cursor-pointer hover:underline focus:scale-102
+			cursor-pointer hover:underline focus:scale-102
 			focus:underline active:scale-102 active:underline sm:text-2xl
 		"
 	>
@@ -41,7 +41,7 @@
 	{#snippet sectionButton(title: string)}
 		<button
 			onclick={() => goto(`/${title}`)}
-			class="figtree outline-0 select-none hover:cursor-pointer hover:border-b-2 focus:border-b-2 active:border-b-2"
+			class="figtree outline-0 select-none cursor-pointer hover:border-b-2 focus:border-b-2 active:border-b-2"
 		>
 			{title}
 		</button>
@@ -66,7 +66,7 @@
 		made by&nbsp;
 		<a
 			href="https://github.com/oixel"
-			class="underline hover:scale-105 hover:cursor-pointer active:scale-105 sm:no-underline"
+			class="underline hover:scale-105 cursor-pointer active:scale-105 sm:no-underline"
 		>
 			oixel
 		</a>
