@@ -8,7 +8,7 @@
 	<title>Isabela Delgado: {data.metadata.title}</title>
 </svelte:head>
 
-<div class="figtree px-5">
+<div class="figtree border-2 bg-white p-5">
 	<div class="flex h-fit gap-2">
 		<div class="grow">
 			<h1 class="text-2xl">{data.metadata.title}</h1>
@@ -16,9 +16,9 @@
 		</div>
 		<button
 			onclick={() => goto('/')}
-			class="m-3 ml-auto flex aspect-square items-center border-2 bg-white p-3 outline-0
-            transition-all duration-100 hover:scale-105
-            cursor-pointer hover:border-dashed focus:scale-105 focus:border-dashed active:scale-105 active:border-dashed"
+			class="m-3 ml-auto flex aspect-square cursor-pointer items-center border-2 bg-white p-3
+            outline-0 transition-all duration-100
+            hover:scale-105 hover:border-dashed focus:scale-105 focus:border-dashed active:scale-105 active:border-dashed"
 		>
 			X
 		</button>
