@@ -1,4 +1,6 @@
 <script lang="ts">
+	import ExitButton from "./ExitButton.svelte";
+
 	let { src, alt, openedImage, showCaption = true } = $props();
 
 	let imageOpen = $state(false);
@@ -43,13 +45,6 @@
 		<img class="w-full sm:w-auto lg:h-9/11" {src} {alt} />
 	</div>
 
-	<!-- Exit button for modal -->
-	<button
-		onclick={() => {
-			imageOpen = false;
-		}}
-		class="fixed top-0 right-0 z-30 m-5 flex aspect-square cursor-pointer items-center border-2 bg-white p-3 outline-0 transition-all duration-200 hover:scale-105 hover:border-dashed focus:scale-105 focus:border-dashed active:scale-105 active:border-dashed"
-	>
-		X
-	</button>
+	<!-- Exit button for image modal -->
+	<ExitButton position="fixed top-0 right-0 z-30 m-5" />
 {/if}

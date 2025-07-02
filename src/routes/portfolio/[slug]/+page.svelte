@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { goto } from '$app/navigation';
+	import ExitButton from '$lib/components/ExitButton.svelte';
 
 	let { data } = $props();
 </script>
@@ -14,14 +15,9 @@
 			<h1 class="text-2xl">{data.metadata.title}</h1>
 			<h2 class="font-[Figtree] text-lg font-light italic">{data.metadata.description}</h2>
 		</div>
-		<button
-			onclick={() => goto('/')}
-			class="m-3 ml-auto flex aspect-square cursor-pointer items-center border-2 bg-white p-3
-            outline-0 transition-all duration-100
-            hover:scale-105 hover:border-dashed focus:scale-105 focus:border-dashed active:scale-105 active:border-dashed"
-		>
-			X
-		</button>
+
+		<!-- Exit button for project. Exits back to previous location (essentially a back button) -->
+		<ExitButton position="m-auto" />
 	</div>
 	<hr class="my-2" />
 
