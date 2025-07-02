@@ -27,8 +27,8 @@
 
 {#if imageOpen}
 	<div
-		style="background-color: rgba(255, 255, 255, 0.90);"
-		class="fixed top-0 left-0 z-20 flex h-[100vh] w-[100vw] items-center justify-center border-2"
+		style="background-color: rgba(65, 65, 65, 0.80);"
+		class="fixed top-0 left-0 z-20 flex flex-col h-[100vh] w-[100vw] items-center justify-center border-2"
 	>
 		<img class="w-auto lg:h-9/11" {src} {alt} />
 	</div>
