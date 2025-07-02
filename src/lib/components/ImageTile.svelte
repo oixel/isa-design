@@ -20,7 +20,7 @@
 		}}
 		{src}
 		{alt}
-		class="w-full border-2 transition-all duration-200 hover:scale-101 hover:cursor-zoom-in hover:border-dashed lg:3/4 xl:w-1/2 2xl:1/2"
+		class="lg:3/4 2xl:1/2 w-full border-2 transition-all duration-200 hover:scale-101 hover:cursor-zoom-in hover:border-dashed active:scale-105 active:border-dashed xl:w-1/2"
 	/>
 	<h2>{alt}</h2>
 </div>
@@ -28,10 +28,10 @@
 {#if imageOpen}
 	<div
 		style="background-color: rgba(255, 255, 255, 0.90);"
-		class="fixed top-0 left-0 z-20 flex justify-center items-center h-[100vh] w-[100vw] border-2"
+		class="fixed top-0 left-0 z-20 flex h-[100vh] w-[100vw] items-center justify-center border-2"
 	>
-    <img class="h-9/10" {src} {alt} />
-    </div>
+		<img class="w-auto lg:h-9/11" {src} {alt} />
+	</div>
 	<button
 		onclick={() => {
 			imageOpen = false;
