@@ -42,7 +42,7 @@
 >
 	{#if hovering || active || focused}
 		<div
-			transition:fade
+			transition:fade={{duration: 150}}
 			style="background-color: rgba(255, 255, 255, 0.4);"
 			class="flex h-full w-full items-center justify-center"
 		>
