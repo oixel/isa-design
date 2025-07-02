@@ -4,7 +4,7 @@
 	let { data } = $props()
 </script>
 
-<div class="flex h-full flex-col items-center gap-10">
+<div class="flex h-full flex-row justify-center items-center gap-10 flex-wrap">
 	{#each data.projects as project}
 		<PortfolioTile {...project} />
 	{/each}
