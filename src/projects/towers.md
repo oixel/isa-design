@@ -15,7 +15,7 @@ date: '2025-07-03'
 
 <ImageTile src="/src/assets/images/TestImage.jpg" alt="A really poor quality image of the side of a skyscraper" />
 
-This is a great example that you can not only import images from the internet, but also from the assets folder! Super cool! Now let us test whethere there is a limit for the line.
+This is a great example that you can not only import images from the internet, but also from the assets folder! Super cool! Now let us test whether there is a limit for the line.
 <br />
 It does not seem that there is... I guess nothing is stopping the freedom of word in this domain! Wah hoo!<br /> Does that work?
 

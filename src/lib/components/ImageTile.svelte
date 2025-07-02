@@ -1,5 +1,5 @@
 <script lang="ts">
-	let { src, alt, showCaption = true } = $props();
+	let { src, alt, openedImage, showCaption = true } = $props();
 
 	let imageOpen = $state(false);
 
@@ -13,7 +13,7 @@
 <!-- Prevents scrolling on page when modal is open -->
 <svelte:window on:wheel|nonpassive={preventDefault} on:touchmove|nonpassive={preventDefault} />
 
-<div class="flex flex-col items-center justify-center gap-4 py-12">
+<div class="flex flex-col items-center justify-center gap-4 py-6">
 	<!-- Displays an image that can be clicked on to be maximized -->
 	<input
 		type="image"
@@ -27,18 +27,20 @@
 
 	<!-- Allows caption to be hidden (used for thumbnail photo at top of project page) -->
 	{#if showCaption && alt}
-		<h2>[ {alt} ]</h2>
+		<div class="flex items-center">
+			<h2 class="italic font-extralight text-sm">{alt}</h2>
+		</div>
 	{/if}
 </div>
 
 <!-- Opens a modal with a maximized version of this image! -->
 {#if imageOpen}
 	<!-- Creates a dark-tinted background for the modal and places the image in the center -->
-	<div
+	<div 
 		style="background-color: rgba(65, 65, 65, 0.80);"
 		class="fixed top-0 left-0 z-20 flex h-[100vh] w-[100vw] flex-col items-center justify-center border-2"
 	>
-		<img class="w-auto lg:h-9/11" {src} {alt} />
+		<img class="w-full sm:w-auto lg:h-9/11" {src} {alt} />
 	</div>
 
 	<!-- Exit button for modal -->
