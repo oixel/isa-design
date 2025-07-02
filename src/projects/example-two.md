@@ -1,7 +1,7 @@
 ---
-title: Example Two
+title: Tower Project
 description: Project example two.
-date: '2025-07-01'
+date: '2025-07-03'
 ---
 
 [This is where another project would go]

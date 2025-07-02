@@ -18,6 +18,13 @@ export async function load() {
 
     // Awaits all the projects to be loaded in
     const projects = await Promise.all(promises);
+
+    // Sort the projects by date from newest to oldest
+    projects.sort((projectA, projectB) => {
+        if (projectA.date > projectB.date) return -1;
+        else if (projectA.date < projectB.date) return 1;
+        else return 0
+    })
     
     // Returns the newly loaded projects and passes it to the landing page!
     return { projects };
