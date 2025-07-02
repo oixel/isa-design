@@ -9,7 +9,7 @@ date: '2025-07-03'
     import ImageTile from '$lib/components/ImageTile.svelte';
 </script>
 
-<ImageTile src="https://media.istockphoto.com/id/511061090/photo/business-office-building-in-london-england.jpg?s=612x612&w=0&k=20&c=nYAn4JKoCqO1hMTjZiND1PAIWoABuy1BwH1MhaEoG6w=" alt="Skyscrapers" />
+<ImageTile src="https://media.istockphoto.com/id/511061090/photo/business-office-building-in-london-england.jpg?s=612x612&w=0&k=20&c=nYAn4JKoCqO1hMTjZiND1PAIWoABuy1BwH1MhaEoG6w=" alt="Skyscrapers" showCaption={false} />
 
 [This is where another project would go]
 

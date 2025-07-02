@@ -12,20 +12,16 @@
 <!-- Note: The portfolio tile shrinks to a square aspect ratio on mobile devices and fills 9/10 otherwise -->
 <button
 	role="Portfolio tile for project named {title}"
+
 	onclick={() => goto(`/portfolio/${slug}`)}
-	onmouseenter={() => {
-		hovering = true;
-	}}
-	onmouseleave={() => {
-		hovering = false;
-	}}
-	ontouchstart={() => {
-		active = true;
-	}}
-	ontouchend={() => {
-		active = false;
-	}}
+
+	onmouseenter={() => { hovering = true; }}
+	onmouseleave={() => { hovering = false; }}
+	ontouchstart={() => { active = true; }}
+	ontouchend={() => { active = false; }}
+
 	bind:focused
+	
 	style={thumbnail ? `background-image: url(${thumbnail});` : ''}
 	class="
 		aspect-square
