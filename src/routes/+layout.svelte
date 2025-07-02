@@ -3,6 +3,7 @@
 
 	import DottedBackground from '$lib/components/DottedBackground.svelte';
 
+	import { page } from '$app/state';
 	import { goto } from '$app/navigation';
 
 	let { children } = $props();
@@ -37,7 +38,9 @@
 	{#snippet sectionButton(title: string)}
 		<button
 			onclick={() => goto(`/${title}`)}
-			class="figtree outline-0 select-none cursor-pointer hover:border-b-2 focus:border-b-2 active:border-b-2"
+			class="figtree outline-0 select-none cursor-pointer hover:border-b-2 focus:border-b-2 active:border-b-2 
+				{(page.url.pathname.replace('/', '') == title) ? 'border-b-2' : ''}
+			"
 		>
 			{title}
 		</button>
