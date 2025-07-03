@@ -1,9 +1,10 @@
 <script lang="ts">
 	import PortfolioTile from '$lib/components/PortfolioTile.svelte';
+	import { LocalStorage } from '$lib/store.svelte.js';
 
 	let { data } = $props();
 
-	let isList = $state(true);
+	const isList = new LocalStorage('isList', true);
 </script>
 
 <svelte:head>
@@ -17,14 +18,14 @@
 			class="hidden w-25 items-center justify-center gap-2 border-2 bg-white py-2 lg:visible lg:flex"
 		>
 			<button
-				onclick={() => { isList = true; }}
-				class="{isList? 'border-b-2' : ''} cursor-pointer outline-0 hover:border-b-2 focus:border-b-2 active:border-b-2"
+				onclick={() => { isList.current = true; }}
+				class="{isList.current ? 'border-b-2' : ''} cursor-pointer outline-0 hover:border-b-2 focus:border-b-2 active:border-b-2"
 			>
 				list
 			</button>
 			<button
-				onclick={() => { isList = false; }}
-				class="{!isList ? 'border-b-2' : ''} cursor-pointer outline-0 hover:border-b-2 focus:border-b-2 active:border-b-2"
+				onclick={() => { isList.current = false; }}
+				class="{!isList.current ? 'border-b-2' : ''} cursor-pointer outline-0 hover:border-b-2 focus:border-b-2 active:border-b-2"
 			>
 				grid
 			</button
@@ -33,7 +34,7 @@
 	</div>
 
 	<!-- Renders portfolio projects as a list or grid (grid only allowed on large devices) -->
-	<div class="list {isList ? 'list' : 'grid'}">
+	<div class="list {isList.current ? 'list' : 'grid'}">
 		{#each data.projects as project}
 			<PortfolioTile {...project} />
 		{/each}
