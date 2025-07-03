@@ -1,10 +1,10 @@
 <script lang="ts">
 	import '../app.css';
-
-	import DottedBackground from '$lib/components/DottedBackground.svelte';
-
+	
 	import { page } from '$app/state';
 	import { goto } from '$app/navigation';
+
+	import DottedBackground from '$lib/components/DottedBackground.svelte';
 
 	let { children } = $props();
 
