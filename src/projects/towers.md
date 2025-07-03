@@ -9,6 +9,16 @@ date: '2025-07-03'
     import ImageTile from '$lib/components/ImageTile.svelte';
 </script>
 
+<style>
+    @import '$lib/styles/markdown.css';
+</style>
+
+<!-- 
+    /////////////////////
+    Write Below This Mark 
+    /////////////////////
+-->
+
 <ImageTile src="https://media.istockphoto.com/id/511061090/photo/business-office-building-in-london-england.jpg?s=612x612&w=0&k=20&c=nYAn4JKoCqO1hMTjZiND1PAIWoABuy1BwH1MhaEoG6w=" alt="Skyscrapers" showCaption={false} />
 
 [This is where another project would go]
@@ -21,16 +31,11 @@ It does not seem that there is... I guess nothing is stopping the freedom of wor
 
 <br /> <br />
 
+# A random header
+## And a smaller one under
+
 AAAAAASK ADNKASNDKASNDJKASNDJKASNDKJAN SKDNASDNASKDNASKLDNAJSKNDJKASNDJKANSDJKAS NDKJANSDKJNASKDNASNDKASNDAKJSNDKANSDKJASNDKJANS DJKASNJKSANJKDNAJKSDNAKSJNDKASNDAKSNDAKSJDNAKSDNAKSNDASJL KNDASKNDKJASNDKJSAD<br />NJKLSANDAJKLSDNAKLSJNDASKLDNAKSJNDKJASNDKASNDA KJSNDKALS NDJKASNDJSNADKJNSAJKDNASKJDNASKDNAKSJNDJK SNDKASNDKSNADKSNADKNSAKDLNSAKDNASKJDNSAKN
 
 <br /> <br />
 AASASASASSADSTAFCGVGUYHILUKYTFDTRFYGUHILJUGKYTFJRDEXHCVBHJLIHUYTFRDHCFGVBJJUYTRFUYJHVGBKJUYT^&RUFYJHVGBUY&dsadnaskjndasjknckjsandknaskjdnasjkdnakjsnfjkasbfahsbd casjndasjknfkhbaskfjnasjkfbksabfsaknksankTI^&RUFYJHGVJHUYUTYFRHCGVBHYUYFTRHCGHVBJGUYFRHCGVJHYGUTF
 <br /> Yup! It does!
-
-<style>
-    /* 
-        NOTE: styling has to be done manually because tailwind overwrites everything...
-    
-        Alternatively, create a tailwind prose file and import it into markdown files
-    */
-</style>

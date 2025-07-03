@@ -7,8 +7,17 @@ date: '2025-07-02'
 
 <script>
     import ImageTile from '$lib/components/ImageTile.svelte';
-    import SlideShow from '$lib/components/SlideShow.svelte';
 </script>
+
+<style>
+    @import '$lib/styles/markdown.css';
+</style>
+
+<!-- 
+    /////////////////////
+    Write Below This Mark 
+    /////////////////////
+-->
 
 # Hey there
 [This is where a project would go...]
