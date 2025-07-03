@@ -42,7 +42,7 @@
 			style="background-color: rgba(255, 255, 255, 0.4);"
 			class="flex h-full w-full items-center justify-center"
 		>
-			<h1 class="figtree border-2 bg-white px-4 py-1 text-4xl select-none">{title}</h1>
+			<h1 class="border-2 bg-white px-4 py-1 text-4xl select-none">{title}</h1>
 		</div>
 	{/if}
 </button>

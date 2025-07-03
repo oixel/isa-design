@@ -14,7 +14,7 @@
 <!-- This is the NavBar -->
 <div
 	bind:clientHeight={navbarHeight}
-	class="fixed z-10 flex h-[8%] w-full items-center justify-center gap-3 border-b-2
+	class="figtree select-none fixed z-10 flex h-[8%] w-full items-center justify-center gap-3 border-b-2
 		bg-white p-5
 		sm:justify-start sm:gap-5"
 >
@@ -22,8 +22,8 @@
 	<button
 		onclick={() => goto('/')}
 		class="
-			figtree text-center text-lg text-nowrap decoration-wavy outline-0 transition-transform duration-100
-			select-none hover:scale-102
+			text-center text-lg text-nowrap decoration-wavy outline-0 transition-transform duration-100
+			hover:scale-102
 			cursor-pointer hover:underline focus:scale-102
 			focus:underline active:scale-102 active:underline sm:text-2xl
 		"
@@ -32,13 +32,13 @@
 	</button>
 
 	<!-- Add little divider icon to separate name from section buttons -->
-	<p class="figtree select-none">~</p>
+	<p>~</p>
 
 	<!-- Define a small snippet for the different section buttons to avoid redundant code -->
 	{#snippet sectionButton(title: string)}
 		<button
 			onclick={() => goto(`/${title}`)}
-			class="figtree outline-0 select-none cursor-pointer hover:border-b-2 focus:border-b-2 active:border-b-2 
+			class="outline-0 cursor-pointer hover:border-b-2 focus:border-b-2 active:border-b-2 
 				{(page.url.pathname.replace('/', '') == title) ? 'border-b-2' : ''}
 			"
 		>
@@ -52,7 +52,7 @@
 	{@render sectionButton('contact')}
 </div>
 
-<div style="padding-top: {navbarHeight}px; " class="flex h-[100vh] flex-col">
+<div style="padding-top: {navbarHeight}px; " class="flex h-[100vh] flex-col figtree">
 	<!-- Render out page content! -->
 	<div class="grow px-5 py-15">
 		{@render children()}
@@ -61,7 +61,7 @@
 	<DottedBackground />
 
 	<!-- A little self promotion never hurt anybody -->
-	<footer class="figtree flex items-center justify-end border-t-1 bg-white p-2 pr-4 text-right">
+	<footer class="flex items-center justify-end border-t-1 bg-white p-2 pr-4 text-right">
 		made by&nbsp;
 		<a
 			href="https://github.com/oixel"
