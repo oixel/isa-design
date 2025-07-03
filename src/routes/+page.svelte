@@ -11,7 +11,7 @@
 	<title>Isabela's Portfolio</title>
 </svelte:head>
 
-<div class="flex flex-col justify-center">
+<div class="flex flex-col justify-center select-none">
 	<!-- Adds options to toggle between list and grid on large screen -->
 	<div class="mx-auto mb-8 flex w-9/10 justify-end gap-6">
 		<div
@@ -23,6 +23,7 @@
 			>
 				list
 			</button>
+			<p class="font-thin">|</p>
 			<button
 				onclick={() => { isList.current = false; }}
 				class="{!isList.current ? 'border-b-2' : ''} cursor-pointer outline-0 hover:border-b-2 focus:border-b-2 active:border-b-2"
