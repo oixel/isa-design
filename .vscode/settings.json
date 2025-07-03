@@ -3,5 +3,6 @@
         "figtree",
         "mdsvex",
         "oixel"
-    ]
+    ],
+    "css.lint.unknownAtRules": "ignore"
 }
