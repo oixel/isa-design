@@ -1,6 +1,12 @@
+<script>
+	import Wip from "$lib/components/WIP.svelte";
+
+</script>
+
 <svelte:head>
     <title>
         Isabela Delgado - Contact
     </title>
 </svelte:head>
-<h1>Hey! Contact me!</h1>
+
+<Wip />
