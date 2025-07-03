@@ -35,21 +35,16 @@
 	</div>
 
 	<!-- Renders portfolio projects as a list or grid (grid only allowed on large devices) -->
-	<div class="list {isList.current ? 'list' : 'grid'}">
+	<div 
+		class="list 
+			{isList.current ? 
+				'flex h-full flex-row flex-wrap items-center justify-center gap-10' 
+				: 'lg:grid lg:grid-cols-3 lg:justify-items-center'
+			}
+		"
+	>
 		{#each data.projects as project}
 			<PortfolioTile {...project} />
 		{/each}
 	</div>
 </div>
-
-<style>
-	@import 'tailwindcss';
-
-	.list {
-		@apply flex h-full flex-row flex-wrap items-center justify-center gap-10;
-	}
-
-	.grid {
-		@apply lg:grid lg:grid-cols-3 lg:justify-items-center;
-	}
-</style>
