@@ -1,7 +1,7 @@
 <script lang="ts">
 	import ExitButton from "./ExitButton.svelte";
 
-	let { src, alt, openedImage, showCaption = true } = $props();
+	let { src, alt, showCaption = true } = $props();
 
 	let imageOpen = $state(false);
 
