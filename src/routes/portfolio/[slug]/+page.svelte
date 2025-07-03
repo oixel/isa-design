@@ -10,10 +10,11 @@
 </svelte:head>
 
 <div class="border-2 bg-white p-5">
-	<div class="flex h-fit gap-2">
+	<div class="flex">
 		<div class="grow">
 			<h1 class="text-2xl">{data.metadata.title}</h1>
 			<h2 class="text-lg font-light italic">{data.metadata.description}</h2>
+			<p>{data.metadata.date}</p>
 		</div>
 
 		<!-- Exit button for project. Exits back to previous location (essentially a back button) -->
