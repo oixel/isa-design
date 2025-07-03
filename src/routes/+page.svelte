@@ -13,9 +13,9 @@
 
 <div class="flex flex-col justify-center select-none">
 	<!-- Adds options to toggle between list and grid on large screen -->
-	<div class="mx-auto mb-8 flex w-9/10 justify-end gap-6">
+	<div class="hidden lg:flex mx-auto mb-8 w-9/10 justify-end gap-6">
 		<div
-			class="hidden w-25 items-center justify-center gap-2 border-2 bg-white py-2 lg:visible lg:flex"
+			class="w-25 items-center justify-center gap-2 border-2 bg-white py-2 flex"
 		>
 			<button
 				onclick={() => { isList.current = true; }}
