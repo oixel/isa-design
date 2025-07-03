@@ -17,7 +17,7 @@
 		</div>
 
 		<!-- Exit button for project. Exits back to previous location (essentially a back button) -->
-		<ExitButton position="m-auto" />
+		<ExitButton onclick={() => window.history.back()} position="m-auto" />
 	</div>
 	<hr class="my-2" />
 

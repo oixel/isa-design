@@ -19,9 +19,7 @@
 	<!-- Displays an image that can be clicked on to be maximized -->
 	<input
 		type="image"
-		onclick={() => {
-			imageOpen = true;
-		}}
+		onclick={() => { imageOpen = true; }}
 		{src}
 		{alt}
 		class="lg:3/4 2xl:1/2 w-full cursor-zoom-in border-2 outline-0 transition-all duration-200 hover:scale-101 hover:border-dashed focus:scale-101 focus:border-dashed active:scale-101 active:border-dashed xl:w-1/2"
@@ -46,5 +44,5 @@
 	</div>
 
 	<!-- Exit button for image modal -->
-	<ExitButton position="fixed top-0 right-0 z-30 m-5" />
+	<ExitButton onclick={() => { imageOpen = false; }} position="fixed top-0 right-0 z-30 m-5" />
 {/if}
