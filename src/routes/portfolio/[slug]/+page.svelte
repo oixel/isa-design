@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { goto } from '$app/navigation';
 	import ExitButton from '$lib/components/ExitButton.svelte';
 
 	let { data } = $props();
