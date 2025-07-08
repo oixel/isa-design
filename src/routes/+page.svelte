@@ -5,11 +5,15 @@
 	let { data } = $props();
 
 	const isList = new LocalStorage('isList', true);
+
+	let windowSize : number = $state(0);
 </script>
 
 <svelte:head>
 	<title>Isabela's Portfolio</title>
 </svelte:head>
+
+<svelte:window bind:outerWidth={windowSize} />
 
 <div class="flex flex-col justify-center select-none">
 	<!-- Adds options to toggle between list and grid on large screen -->
@@ -37,9 +41,9 @@
 	<!-- Renders portfolio projects as a list or grid (grid only allowed on large devices) -->
 	<div 
 		class="list 
-			{isList.current ? 
+			{isList.current || windowSize < 1025 ? 
 				'flex h-full flex-row flex-wrap items-center justify-center gap-10' 
-				: 'lg:grid lg:grid-cols-3 lg:justify-items-center'
+				: 'lg:grid lg:grid-cols-3 lg:justify-items-center gap-y-15'
 			}
 		"
 	>
