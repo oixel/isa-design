@@ -1,10 +1,8 @@
 <script lang="ts">
-	import PortfolioTile from '$lib/components/PortfolioTile.svelte';
+	import Posts from '$lib/components/Posts.svelte';
 	import { LocalStorage } from '$lib/store.svelte.js';
 
 	let { data } = $props();
-
-	const isList = new LocalStorage('isList', true);
 
 	let windowSize : number = $state(0);
 </script>
@@ -15,40 +13,4 @@
 
 <svelte:window bind:outerWidth={windowSize} />
 
-<div class="flex flex-col justify-center select-none">
-	<!-- Adds options to toggle between list and grid on large screen -->
-	<div class="hidden lg:flex mx-auto mb-8 w-9/10 justify-end gap-6">
-		<div
-			class="w-25 items-center justify-center gap-2 border-2 bg-white py-2 flex"
-		>
-			<button
-				onclick={() => { isList.current = true; }}
-				class="{isList.current ? 'border-b-2' : ''} cursor-pointer outline-0 hover:border-b-2 focus:border-b-2 active:border-b-2"
-			>
-				list
-			</button>
-			<p class="font-thin">|</p>
-			<button
-				onclick={() => { isList.current = false; }}
-				class="{!isList.current ? 'border-b-2' : ''} cursor-pointer outline-0 hover:border-b-2 focus:border-b-2 active:border-b-2"
-			>
-				grid
-			</button
-			>
-		</div>
-	</div>
-
-	<!-- Renders portfolio projects as a list or grid (grid only allowed on large devices) -->
-	<div 
-		class="list 
-			{isList.current || windowSize < 1025 ? 
-				'flex h-full flex-row flex-wrap items-center justify-center gap-10' 
-				: 'lg:grid lg:grid-cols-3 lg:justify-items-center gap-y-15'
-			}
-		"
-	>
-		{#each data.projects as project}
-			<PortfolioTile {...project} />
-		{/each}
-	</div>
-</div>
+<Posts posts={data.posts}/>

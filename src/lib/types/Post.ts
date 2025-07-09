@@ -1,4 +1,4 @@
-export type Project = {
+export type Post = {
     title: string
     description: string
     thumbnail: string
