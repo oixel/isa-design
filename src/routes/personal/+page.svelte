@@ -1,5 +1,7 @@
 <script>
-	import Wip from "$lib/components/WIP.svelte";
+	import Posts from "$lib/components/Posts.svelte";
+	
+    let { data } = $props();
 
 </script>
 
@@ -7,4 +9,4 @@
     <title>Isabela Delgado - Personal</title>
 </svelte:head>
 
-<Wip />
+<Posts posts={data.posts} />
