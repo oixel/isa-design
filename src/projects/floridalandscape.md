@@ -10,7 +10,7 @@ date: '2025-04-04'
 </script>
 
 <style>
-    @import 'src/styles/markdown.css';
+    @import '/src/styles/markdown.css';
 </style>
 
 <!-- 
