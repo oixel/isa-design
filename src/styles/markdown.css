@@ -1,8 +1,9 @@
-@import 'tailwindcss';
-
 h1 {
-    @apply text-2xl;
+	font-size: var(--text-2xl);
+	line-height: var(--tw-leading, var(--text-2xl--line-height));
 }
+
 h2 {
-    @apply text-xl;
+	font-size: var(--text-xl);
+	line-height: var(--tw-leading, var(--text-xl--line-height));
 }
