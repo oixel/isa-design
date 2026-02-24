@@ -6,12 +6,9 @@ date: '2025-07-03'
 ---
 
 <script>
+    import '$lib/styles/markdown.css';
     import ImageTile from '$lib/components/ImageTile.svelte';
 </script>
-
-<style>
-    @import '/src/styles/markdown.css';
-</style>
 
 <!-- 
     /////////////////////
