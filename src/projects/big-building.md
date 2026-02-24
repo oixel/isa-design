@@ -1,7 +1,8 @@
 ---
 title: Ruins
 description: Using an abandoned citrus packing site to create a space for dairy processing.
-thumbnail: https://images.adsttc.com/media/images/6636/c29f/c734/945c/42c2/96ed/large_jpg/architecture-as-a-product-what-makes-a-building-worth-repeating_1.jpg?1714864858
+thumbnail: ![ruins cover page](https://github.com/user-attachments/assets/b7362784-7412-4e7d-9bef-0bc06beb25de)
+
 date: '2024-12'
 ---
 
