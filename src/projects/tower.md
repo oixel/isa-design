@@ -19,7 +19,7 @@ date: 2025-03
 # D4 Spring 2025
 Exploring height and scale through a vertical datum with scattered nodes.
 
-<ImageTile src="static/images/tower model.jpg" alt="Tower Model" />
+<ImageTile src="/images/tower model.jpg" alt="Tower Model" />
 Model was made using basswood and plexiglass. 
-<ImageTile src="static/images/Portfolio+Resume/tower close up.jpg" alt="Model Detail" />
+<ImageTile src="/images/Portfolio+Resume/tower close up.jpg" alt="Model Detail" />
 A closer detail of model showing structural framework.
