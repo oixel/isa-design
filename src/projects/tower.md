@@ -1,8 +1,8 @@
 ---
 title: Tower
-description: [Description]
-thumbnail: [Image Path]
-date: 'YYYY-MM-DD'
+description: Creating a weather station through a vertical datum.
+thumbnail: static/images/Portfolio cover.jpg
+date: 2025-03
 ---
 
 <script>
@@ -15,3 +15,11 @@ date: 'YYYY-MM-DD'
     Write Below This Mark 
     /////////////////////
 -->
+
+# D4 Spring 2025
+Exploring height and scale through a vertical datum with scattered nodes.
+
+<ImageTile src="static/images/tower model.jpg" alt="Tower Model" />
+Model was made using basswood and plexiglass. 
+<ImageTile src="static/images/Portfolio+Resume/tower close up.jpg" alt="Model Detail" />
+A closer detail of model showing structural framework.
