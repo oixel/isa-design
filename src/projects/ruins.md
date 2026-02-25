@@ -16,7 +16,7 @@ date: '2024-12'
     /////////////////////
 -->
 
-# D3 Studio 2024
+# D3 Fall 2024
 Incorporating human interaction in a dairy facility
 
 <ImageTile src="/images/MAPPING REDO.jpg" alt="Site Diagram" />
