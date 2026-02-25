@@ -1,7 +1,7 @@
 ---
 title: Florida Landscape
 description: Incorporating design into existing context.
-thumbnail: /isa-design/images/florida-landscape/Delgado_Isabela_ModelPhoto7.jpg
+thumbnail: /images/florida-landscape/Delgado_Isabela_ModelPhoto7.jpg
 date: '2025-04-04'
 ---
 
@@ -16,4 +16,4 @@ date: '2025-04-04'
     /////////////////////
 -->
 
-<ImageTile src="/isa-design/images/florida-landscape/Delgado_Isabela_ModelPhoto1.jpg" alt="A close up detail involving the framework of the overhead condition" />
+<ImageTile src="/images/florida-landscape/Delgado_Isabela_ModelPhoto1.jpg" alt="A close up detail involving the framework of the overhead condition" />
