@@ -3,13 +3,14 @@ import { error } from '@sveltejs/kit';
 
 export const prerender = true;
 
+// Dynamically read all project names to pre-generate the slug paths
 export function entries() {
-    return [
-        { slug: 'big-building' },
-        { slug: 'florida-landscape' },
-        { slug: 'towers' },
-        // Add names of all projects in src/projects/*.md here
-    ];
+    const projects = import.meta.glob('/src/projects/*.md', { eager: true });
+    return Object.keys(projects)
+        .map((path) => ({
+            slug: path.split('/').pop()?.replace('.md', '')
+        }))
+        .filter((entry): entry is { slug: string } => entry.slug !== undefined);
 }
 
 // 
