@@ -48,7 +48,6 @@
 
 	<!-- Create snippets for each of the section buttons -->
 	{@render sectionButton('about')}
-	{@render sectionButton('personal')}
 	{@render sectionButton('contact')}
 </div>
 
