@@ -19,8 +19,7 @@ date: '2024-12'
 # D3 Studio 2024
 Incorporating human interaction in a dairy facility
 
-<ImageTile src="/images/[MAPPING REDO](https://github.com/user-attachments/assets/a635cd05-efaa-4274-be99-0c9e4e4a1ead)
-ath>" alt="Landscape Diagram" />
+<ImageTile src="/images/MAPPING REDO.jpg" alt="Site Diagram" />
 This diagram shows different environmental elements on the site and how they might come to interact.
 <ImageTile src="https://static01.nyt.com/images/2023/09/21/multimedia/21sp-cli-home-01-cqhz/21sp-cli-home-01-cqhz-articleLarge.jpg?quality=75&auto=webp&disable=upscale" alt="Another Test Building" />
 <ImageTile src="https://static01.nyt.com/images/2023/09/21/multimedia/21sp-cli-home-01-cqhz/21sp-cli-home-01-cqhz-articleLarge.jpg?quality=75&auto=webp&disable=upscale" alt="Another Test Building" showCaption={false} />
