@@ -20,7 +20,7 @@ date: '2025-07-03'
 
 [This is where another project would go]
 
-<ImageTile src="/isa-design/images/TestImage.jpg" alt="A really poor quality image of the side of a skyscraper" />
+<ImageTile src="/images/TestImage.jpg" alt="A really poor quality image of the side of a skyscraper" />
 
 This is a great example that you can not only import images from the internet, but also from the assets folder! Super cool! Now let us test whether there is a limit for the line.
 <br />
