@@ -16,10 +16,10 @@ date: '2024-12'
     /////////////////////
 -->
 
-# Hey there
-[This is where a project would go...]
+# D3 Studio 2024
+Incorporating human interaction in a dairy facility
 
-<ImageTile src="https://images.adsttc.com/media/images/6636/c29f/c734/945c/42c2/96ed/large_jpg/architecture-as-a-product-what-makes-a-building-worth-repeating_1.jpg?1714864858" alt="Test Building" />
-Hey more text in here to test padding? No way!
+<ImageTile src="![MAPPING REDO](https://github.com/user-attachments/assets/9b0a202d-b835-43f9-910f-7e3e3f0fd5b8)" alt="Landscape Diagram" />
+This diagram shows different environmental elements on the site and how they might come to interact.
 <ImageTile src="https://static01.nyt.com/images/2023/09/21/multimedia/21sp-cli-home-01-cqhz/21sp-cli-home-01-cqhz-articleLarge.jpg?quality=75&auto=webp&disable=upscale" alt="Another Test Building" />
 <ImageTile src="https://static01.nyt.com/images/2023/09/21/multimedia/21sp-cli-home-01-cqhz/21sp-cli-home-01-cqhz-articleLarge.jpg?quality=75&auto=webp&disable=upscale" alt="Another Test Building" showCaption={false} />
