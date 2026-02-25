@@ -5,7 +5,7 @@ export const prerender = true;
 
 export function entries() {
     return [
-        { slug: 'big-building' },
+        { slug: 'bigbuilding' },
         { slug: 'floridalandscape' },
         { slug: 'towers' },
         // Add names of all projects in src/projects/*.md here
