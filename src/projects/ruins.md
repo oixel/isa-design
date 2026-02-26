@@ -19,7 +19,7 @@ date: '2024-12'
 # D3 Fall 2024
 Incorporating human interaction in a dairy facility
 
-<ImageTile src="/images/MAPPING REDO.jpg" alt="Site Diagram" />
+<ImageTile src="/images/MAPPING_REDO.jpg" alt="Site Diagram" />
 This diagram shows different environmental elements on the site and how they might come to interact.
 <ImageTile src="https://static01.nyt.com/images/2023/09/21/multimedia/21sp-cli-home-01-cqhz/21sp-cli-home-01-cqhz-articleLarge.jpg?quality=75&auto=webp&disable=upscale" alt="Another Test Building" />
 <ImageTile src="https://static01.nyt.com/images/2023/09/21/multimedia/21sp-cli-home-01-cqhz/21sp-cli-home-01-cqhz-articleLarge.jpg?quality=75&auto=webp&disable=upscale" alt="Another Test Building" showCaption={false} />
