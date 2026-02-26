@@ -1,7 +1,7 @@
 ---
 title: Charleston Music Library
 description: Music Library located in northern Charleston, South Carolina with a third-space auditorium and bar.
-thumbnail: static/images/Portfolio+Resume/library midel.png
+thumbnail: static/images/Portfolio_Resume/library_midel.png
 date: '2025-12'
 ---
 
