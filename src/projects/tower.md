@@ -1,7 +1,7 @@
 ---
 title: Tower
 description: Creating a weather station through a vertical datum.
-thumbnail: static/images/Portfolio cover.jpg
+thumbnail: /images/Portfolio+Resume/cropped cover tower.jpg
 date: 2025-03
 ---
 
